@@ -1,12 +1,20 @@
+"use client";
+
 import Button from "@/components/UI/Button";
 
+import useInput from "../hooks/useInput";
+
 const Home = () => {
+  const { formData, errors, handleChange, handleSubmit } = useInput();
+
   return (
     <div className="flex justify-center items-center p-4 min-h-screen">
       <div className="sm:block hidden mt-10 m-12">
         <img src="task.png" className="w-7/12 h-7/12" />
-        <h1 className="text-sm sm:text-base font-bold mb-1">Lorem ipsum dolor sit </h1>
-        <p className="text-[5px] sm:text-xs text-gray-400 mb-1">
+        <h1 className="text-base sm:text-xl font-bold mb-1">
+          Lorem ipsum dolor sit
+        </h1>
+        <p className="text-xs sm:text-sm text-gray-400 mb-1 max-w-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut
         </p>
@@ -16,40 +24,88 @@ const Home = () => {
         <h1 className="text-[12px] text-center sm:text-lg">
           Create an Account
         </h1>
-        <form className="border border-gray-300 rounded-lg p-8 mt-1">
+        <form
+          onSubmit={handleSubmit}
+          className="border border-gray-300 rounded-lg p-8 mt-1"
+        >
           <div className="flex flex-col">
-            <label className="text-xs sm:text-sm">Full Name</label>
-            <input
-              className="border rounded w-full h-4 sm:h-6 text-[5px] sm:text-xs mt-1"
-              placeholder="Email address or username"
-            />
+            <div className="mt-3">
+              <label htmlFor="fullname" className="text-xs sm:text-sm">
+                Full Name
+              </label>
+              <input
+                id="fullname"
+                name="fullname"
+                className="border rounded w-full h-4 sm:h-6 text-xs sm:text-sm mt-1"
+                placeholder="Email address or username"
+                value={formData.fullname}
+                onChange={handleChange}
+              />
+              {errors.fullname && <p className="text-xs text-red-500">{errors.fullname}</p>}
+            </div>
 
-            <label className="text-xs sm:text-sm mt-3">Contact Number</label>
-            <input
-              className="border rounded w-full h-4 sm:h-6 text-[5px] sm:text-xs mt-1"
-              placeholder="Enter your contact number"
-            />
+            <div className="mt-3">
+              <label htmlFor="number" className="text-xs sm:text-sm mt-3">
+                Contact Number
+              </label>
+              <input
+                id="number"
+                name="number"
+                className="border rounded w-full h-4 sm:h-6 text-xs sm:text-sm mt-1"
+                placeholder="Enter your contact number"
+                value={formData.number}
+                onChange={handleChange}
+              />
+              {errors.number && <p className="text-xs text-red-500">{errors.number}</p>}
+            </div>
 
-            <label className="text-xs sm:text-sm mt-3">Email ID</label>
-            <input
-              className="border rounded w-full h-4 sm:h-6 text-[5px] sm:text-xs mt-1"
-              placeholder="Your email id"
-            />
+            <div className="mt-3">
+              <label htmlFor="email" className="text-xs sm:text-sm mt-3">
+                Email ID
+              </label>
+              <input
+                id="email"
+                name="email"
+                className="border rounded w-full h-4 sm:h-6 text-xs sm:text-sm mt-1"
+                placeholder="Your email id"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && <p className="text-xs text-red-500">{errors.email}</p>}
+            </div>
 
-            <label className="text-xs sm:text-sm mt-3">Create a Password</label>
-            <input
-              className="border rounded w-full h-4 sm:h-6 text-[5px] sm:text-xs mt-1"
-              placeholder="Password"
-            />
+            <div className="mt-3">
+              <label htmlFor="password" className="text-xs sm:text-sm mt-3">
+                Create a Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                className="border rounded w-full h-4 sm:h-6 text-xs sm:text-sm mt-1"
+                placeholder="Password"
+                value={formData.password}
+                onChange={handleChange}
+              />
+              {errors.password && <p className="text-xs text-red-500">{errors.password}</p>}
+            </div>
 
-            <label className="text-xs sm:text-sm mt-3">Country</label>
-            <input
-              className="border rounded w-full h-4 sm:h-6 text-[5px] sm:text-xs mt-1"
-              placeholder="Enter your country"
-            />
+            <div className="mt-3">
+              <label htmlFor="country" className="text-xs sm:text-sm mt-3">
+                Country
+              </label>
+              <input
+                id="country"
+                name="country"
+                className="border rounded w-full h-4 sm:h-6 text-xs sm:text-sm mt-1"
+                placeholder="Enter your country"
+                value={formData.country}
+                onChange={handleChange}
+              />
+              {errors.country && <p className="text-xs text-red-500">{errors.country}</p>}
+            </div>
           </div>
 
-          <Button text="Sign Up"></Button>
+          <Button link="/login" text="Sign Up"></Button>
         </form>
       </div>
     </div>

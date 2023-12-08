@@ -1,6 +1,6 @@
 
-import ProposalCard from "@/app/jobs/[id]/ProposalCard";
 
+import ProposalCard from "@/app/jobs/[id]/ProposalCard";
 const JobApplication = () => {
     return (
         
