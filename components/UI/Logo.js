@@ -1,6 +1,6 @@
-const Logo = () => {
+const Logo = (props) => {
     return (
-        <h1 className="uppercase text-white">logo</h1>
+        <h1 className={"uppercase font-bold leading-[72px] text-white"+props.style}>logo</h1>
     );
 }
  

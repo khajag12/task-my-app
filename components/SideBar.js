@@ -4,8 +4,8 @@ import Checkbox from "../components/Checkbox";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white border w-64 min-h-screen p-4">
-      <p className="text-base sm:text-sm font-bold mb-4">Popular Services</p>
+    <div className="bg-white border w-full h-[1905px] p-4">
+      <p className="text-base sm:text-[25px] font-semibold leading-[58px] mb-4">Popular Services</p>
       <ul>
         <Checkbox checkboxContent="Lorem ipsum dolo" />
         <Checkbox checkboxContent="laboris nisi ut aliquip" />
@@ -18,7 +18,7 @@ const Sidebar = () => {
       </ul>
       <div>
         <div className="flex items-center mt-6">
-          <div className="text-base sm:text-sm">Sort</div>
+          <div className="text-base sm:text-[25px] font-semibold leading-[58px]">Sort</div>
           <div className="ml-1">
           <svg
             viewBox="0 0 24 24"
@@ -37,7 +37,7 @@ const Sidebar = () => {
           </svg>
           </div>
         </div>
-        <button className="mt-4 text-sm sm:text-xs">Date Posted</button>
+        <button className="mt-4 text-sm sm:text-[18px] font-medium leading-[58px] leading-[0.18px]">Date Posted</button>
       </div>
     </div>
   );

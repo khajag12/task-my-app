@@ -11,7 +11,7 @@ export const dummyData = [
       category: "Lorem ipsum",
       employerName: "Lorem ipsum",
       description:
-        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum.",
+        "Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem",
     },
     {
       id: "2",
@@ -20,7 +20,7 @@ export const dummyData = [
       category: "Lorem ipsum",
       employerName: "Lorem ipsum",
       description:
-        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum.",
+        "Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem",
     },
     {
       id: "3",
@@ -29,7 +29,7 @@ export const dummyData = [
       category: "Lorem ipsum",
       employerName: "Lorem ipsum",
       description:
-        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum.",
+        "Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem Lorem Ipsum Lorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem IpsumLorem lorem IpsumLorem IpsumLorem ipsum lorem",
     },
   ];
 
